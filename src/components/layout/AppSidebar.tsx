@@ -101,7 +101,7 @@ export function AppSidebar({ isCollapsed, onToggle, isMobileOpen, onMobileClose 
                 animate={{ opacity: 1 }}
                 className="text-xl font-bold text-sidebar-foreground"
               >
-                CampusOne
+                BPMCEOne
               </motion.span>
             )}
           </Link>
