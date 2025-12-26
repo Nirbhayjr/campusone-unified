@@ -114,7 +114,7 @@ const features = [
 // Testimonials
 const testimonials = [
   {
-    quote: "CampusOne transformed how I manage my academic life. The AI study planner alone saved me hours every week.",
+    quote: "BPMCEOne transformed how I manage my academic life. The AI study planner alone saved me hours every week.",
     author: "Sarah Chen",
     role: "Computer Science, Year 3",
     avatar: "SC"
@@ -172,7 +172,7 @@ export default function LandingPage() {
               <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center shadow-glow">
                 <GraduationCap className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">CampusOne</span>
+              <span className="text-xl font-bold text-foreground">BPMCEOne</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-8">
@@ -236,7 +236,7 @@ export default function LandingPage() {
               variants={fadeInUp}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
             >
-              CampusOne is your intelligent digital companion that unifies academics, 
+              BPMCEOne is your intelligent digital companion that unifies academics, 
               safety, wellness, and career guidance into one seamless experience.
             </motion.p>
 
@@ -277,7 +277,7 @@ export default function LandingPage() {
                     <div className="w-3 h-3 rounded-full bg-attendance/50" />
                     <div className="flex-1 flex justify-center">
                       <div className="px-4 py-1 bg-background rounded-md text-xs text-muted-foreground">
-                        campusone.edu/dashboard
+                        BPMCEone.edu/dashboard
                       </div>
                     </div>
                   </div>
@@ -381,7 +381,7 @@ export default function LandingPage() {
               Everything you need, <span className="gradient-text">unified</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              From AI-powered academics to mental wellness, CampusOne brings every aspect of campus life together.
+              From AI-powered academics to mental wellness, BPMCEOne brings every aspect of campus life together.
             </p>
           </motion.div>
 
@@ -415,7 +415,7 @@ export default function LandingPage() {
               Loved by <span className="gradient-text">students</span> everywhere
             </h2>
             <p className="text-lg text-muted-foreground">
-              Hear from the students whose campus life has been transformed by CampusOne.
+              Hear from the students whose campus life has been transformed by BPMCEOne.
             </p>
           </motion.div>
 
@@ -471,14 +471,14 @@ export default function LandingPage() {
                 variants={fadeInUp}
                 className="text-3xl md:text-5xl font-bold text-foreground mb-6"
               >
-                Join thousands of students on <span className="gradient-text">CampusOne</span>
+                Join thousands of students on <span className="gradient-text">BPMCEOne</span>
               </motion.h2>
 
               <motion.p
                 variants={fadeInUp}
                 className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8"
               >
-                Experience the future of campus life. Start your journey with CampusOne today.
+                Experience the future of campus life. Start your journey with BPMCEOne today.
               </motion.p>
 
               <motion.div variants={fadeInUp}>
@@ -502,11 +502,11 @@ export default function LandingPage() {
               <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
                 <GraduationCap className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">CampusOne</span>
+              <span className="text-xl font-bold text-foreground">BPMCEOne</span>
             </Link>
             
             <p className="text-sm text-muted-foreground">
-              © 2025 CampusOne. Built for students, by students.
+              © 2025 BPMCEOne. Built for students, by students.
             </p>
 
             <div className="flex items-center gap-6">
