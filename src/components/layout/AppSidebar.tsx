@@ -13,7 +13,9 @@ import {
   Settings,
   ChevronLeft,
   ChevronRight,
-  X
+  X,
+  FileText,
+  Users
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NavLink } from "@/components/NavLink";
@@ -29,9 +31,11 @@ const menuItems = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/dashboard", color: "primary" },
   { icon: BookOpen, label: "AI Study Planner", path: "/study-planner", color: "study" },
   { icon: BarChart3, label: "Attendance", path: "/attendance", color: "attendance" },
+  { icon: FileText, label: "PYQs", path: "/pyqs", color: "study" },
   { icon: MessageSquareWarning, label: "Complaints", path: "/complaints", color: "complaints" },
   { icon: Shield, label: "Campus Safety", path: "/safety", color: "safety" },
   { icon: Compass, label: "Career Path", path: "/career", color: "career" },
+  { icon: Users, label: "Alumni", path: "/alumni", color: "career" },
   { icon: Search, label: "Lost & Found", path: "/lost-found", color: "lost" },
   { icon: Heart, label: "Wellness", path: "/wellness", color: "wellness" },
   { icon: Settings, label: "Settings", path: "/settings", color: "muted" },
