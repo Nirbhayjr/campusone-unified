@@ -14,6 +14,8 @@ import Career from "./pages/Career";
 import LostFound from "./pages/LostFound";
 import Wellness from "./pages/Wellness";
 import Settings from "./pages/Settings";
+import PYQs from "./pages/PYQs";
+import Alumni from "./pages/Alumni";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +37,8 @@ const App = () => (
             <Route path="/career" element={<Career />} />
             <Route path="/lost-found" element={<LostFound />} />
             <Route path="/wellness" element={<Wellness />} />
+            <Route path="/pyqs" element={<PYQs />} />
+            <Route path="/alumni" element={<Alumni />} />
             <Route path="/settings" element={<Settings />} />
           </Route>
           <Route path="*" element={<NotFound />} />
