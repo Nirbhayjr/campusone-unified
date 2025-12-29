@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Compass, Target, BookOpen, Briefcase, TrendingUp, Star, ChevronRight } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
+import { AIBadge, DemoBanner } from "@/components/ui/demo-badge";
 
 export default function Career() {
   useEffect(() => { document.documentElement.classList.add('dark'); }, []);
@@ -22,12 +23,17 @@ export default function Career() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl mx-auto">
+      <DemoBanner />
+      
       <div className="flex items-center gap-3 mb-8">
         <div className="w-10 h-10 rounded-xl bg-career/20 flex items-center justify-center">
           <Compass className="w-6 h-6 text-career" />
         </div>
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Career Path</h1>
+          <h1 className="text-3xl font-bold text-foreground flex items-center gap-3">
+            Career Path
+            <AIBadge variant="gemini" />
+          </h1>
           <p className="text-muted-foreground">AI-driven career recommendations</p>
         </div>
       </div>

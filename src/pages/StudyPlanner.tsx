@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { AIBadge, DemoBanner } from "@/components/ui/demo-badge";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -74,7 +75,7 @@ const aiSuggestions = [
 ];
 
 const chatMessages = [
-  { role: "ai", content: "Hi John! I'm your AI study assistant. I've analyzed your exam schedule and created an optimized study plan. Would you like me to explain the priorities?" },
+  { role: "ai", content: "Hi Nirbhay! I'm your AI study assistant. I've analyzed your exam schedule and created an optimized study plan. Would you like me to explain the priorities?" },
   { role: "user", content: "Yes, please explain why Mathematics is scheduled first." },
   { role: "ai", content: "Great question! I've prioritized Mathematics because:\n\n1. Your exam is in 5 days\n2. Calculus requires consistent practice\n3. Your morning focus is typically higher\n\nWould you like me to adjust anything?" },
 ];
@@ -132,6 +133,9 @@ export default function StudyPlanner() {
       variants={staggerContainer}
       className="max-w-7xl mx-auto"
     >
+      {/* Demo Banner */}
+      <DemoBanner />
+
       {/* Header */}
       <motion.div variants={fadeInUp} className="flex items-center justify-between mb-8">
         <div>
@@ -140,6 +144,7 @@ export default function StudyPlanner() {
               <Brain className="w-6 h-6 text-study" />
             </div>
             AI Study Planner
+            <AIBadge variant="gemini" />
           </h1>
           <p className="text-muted-foreground">
             Your personalized study schedule powered by AI
@@ -257,6 +262,7 @@ export default function StudyPlanner() {
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="w-5 h-5 text-study" />
               <h3 className="text-lg font-semibold text-foreground">AI Suggestions</h3>
+              <AIBadge variant="gemini" className="ml-auto" />
             </div>
 
             <div className="space-y-3">

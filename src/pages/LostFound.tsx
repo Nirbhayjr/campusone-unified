@@ -4,6 +4,7 @@ import { Search, MapPin, Clock, Tag, Sparkles } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { AIBadge, DemoBanner } from "@/components/ui/demo-badge";
 
 export default function LostFound() {
   useEffect(() => { document.documentElement.classList.add('dark'); }, []);
@@ -19,12 +20,17 @@ export default function LostFound() {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl mx-auto">
+      <DemoBanner />
+
       <div className="flex items-center gap-3 mb-8">
         <div className="w-10 h-10 rounded-xl bg-lost/20 flex items-center justify-center">
           <Search className="w-6 h-6 text-lost" />
         </div>
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Lost & Found</h1>
+          <h1 className="text-3xl font-bold text-foreground flex items-center gap-3">
+            Lost & Found
+            <AIBadge />
+          </h1>
           <p className="text-muted-foreground">AI-powered item recovery</p>
         </div>
       </div>
