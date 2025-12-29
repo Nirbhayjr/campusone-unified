@@ -505,9 +505,22 @@ export default function LandingPage() {
               <span className="text-xl font-bold text-foreground">BPMCEOne</span>
             </Link>
             
-            <p className="text-sm text-muted-foreground">
-              © 2025 BPMCEOne. Built for students, by students.
-            </p>
+            <div className="flex flex-col items-center gap-2">
+              <p className="text-sm text-muted-foreground">
+                © 2025 BPMCEOne. Built for students, by students.
+              </p>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-muted-foreground">Developed by</span>
+                <a 
+                  href="https://nirbhayjr.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-semibold gradient-text hover:underline transition-all"
+                >
+                  Nirbhay Jr
+                </a>
+              </div>
+            </div>
 
             <div className="flex items-center gap-6">
               <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
