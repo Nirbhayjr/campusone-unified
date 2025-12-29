@@ -17,7 +17,9 @@ import {
   CheckCircle,
   AlertTriangle,
   ChevronRight,
-  Star
+  Star,
+  Info,
+  Cpu
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -115,15 +117,15 @@ const features = [
 const testimonials = [
   {
     quote: "BPMCEOne transformed how I manage my academic life. The AI study planner alone saved me hours every week.",
-    author: "Sarah Chen",
+    author: "Nirbhay Kumar",
     role: "Computer Science, Year 3",
-    avatar: "SC"
+    avatar: "NK"
   },
   {
     quote: "The safety features gave my parents peace of mind. Knowing help is one tap away is incredibly reassuring.",
-    author: "Marcus Johnson",
+    author: "Manish Verma",
     role: "Engineering, Year 2",
-    avatar: "MJ"
+    avatar: "MV"
   },
   {
     quote: "I found my lost laptop within 24 hours thanks to the AI matching system. Absolutely incredible.",
@@ -216,6 +218,21 @@ export default function LandingPage() {
             variants={staggerContainer}
             className="text-center max-w-4xl mx-auto"
           >
+            {/* Hackathon Demo Banner */}
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-wrap justify-center gap-2 mb-4"
+            >
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                <Info className="w-3 h-3" />
+                Hackathon Demo
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-400 border border-blue-500/30">
+                <Cpu className="w-3 h-3" />
+                Google Gemini API Planned
+              </span>
+            </motion.div>
+
             <motion.div
               variants={fadeInUp}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8"

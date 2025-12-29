@@ -23,6 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
+import { AIBadge, DemoBanner } from "@/components/ui/demo-badge";
 import {
   LineChart,
   Line,
@@ -168,6 +169,7 @@ function StudyPlanWidget() {
             <Brain className="w-4 h-4 text-study" />
           </div>
           <h3 className="text-lg font-semibold text-foreground">Today's AI Study Plan</h3>
+          <AIBadge variant="gemini" className="hidden sm:inline-flex" />
         </div>
         <Link to="/study-planner" className="text-sm text-primary hover:underline flex items-center gap-1">
           Full plan <ChevronRight className="w-4 h-4" />
@@ -259,6 +261,7 @@ function CareerProgress() {
             <Target className="w-4 h-4 text-career" />
           </div>
           <h3 className="text-lg font-semibold text-foreground">Career Progress</h3>
+          <AIBadge className="hidden sm:inline-flex" />
         </div>
         <Link to="/career" className="text-sm text-primary hover:underline flex items-center gap-1">
           Details <ChevronRight className="w-4 h-4" />
@@ -449,10 +452,13 @@ export default function Dashboard() {
       variants={staggerContainer}
       className="max-w-7xl mx-auto"
     >
+      {/* Demo Banner */}
+      <DemoBanner />
+
       {/* Header */}
       <motion.div variants={fadeInUp} className="mb-8">
         <h1 className="text-3xl font-bold text-foreground mb-2">
-          Good afternoon, John 👋
+          Good afternoon, Nirbhay 👋
         </h1>
         <p className="text-muted-foreground">
           Here's what's happening with your campus life today.

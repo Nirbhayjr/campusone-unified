@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, FileText, Download, Calendar, BookOpen, Filter } from "lucide-react";
+import { DemoBanner } from "@/components/ui/demo-badge";
 
 interface PYQ {
   id: string;
@@ -54,6 +55,8 @@ const PYQs = () => {
 
   return (
     <div className="space-y-6">
+      <DemoBanner />
+
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
